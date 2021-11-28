@@ -100,7 +100,7 @@ def hub_info_airline():
             result = request.form
             name = result['name']
             results = Airline(name).hub_info()
-            if None in results[0]:
+            if results is False or None in results[0]:
                 flash(f"No hub information for {name}")
             else:
                 items = []
@@ -121,7 +121,7 @@ def alliance_info_airport():
             result = request.form
             name = result['name']
             results = Airline(name).alliance_info()
-            if None in results[0]:
+            if results is False or None in results[0]:
                 flash(f"No alliance information for {name}")
             else:
                 items = []
@@ -214,7 +214,7 @@ def distance_info_airport():
             name = result['name']
             city = result['city']
             results = Airport(name, city).distance_info()
-            if None in results[0]:
+            if results is False or None in results[0]:
                 flash(f"No distance information for {name} in {city}")
             else:
                 items = []
@@ -236,7 +236,7 @@ def hub_info_airport():
             name = result['name']
             city = result['city']
             results = Airport(name, city).hub_info()
-            if None in results[0]:
+            if results is False or None in results[0]:
                 flash(f"No hub information for {name} in {city}")
             else:
                 items = []
