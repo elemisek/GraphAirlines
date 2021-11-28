@@ -1,3 +1,4 @@
+from ..app import app
 import numpy as np
 from flask import Flask, flash, request, render_template, redirect
 
@@ -5,11 +6,6 @@ from .forms import *
 from .models.airline import *
 from .models.airport import *
 from .models.distance import *
-
-app = Flask(__name__)
-
-if __name__ == "__main__":
-    app.run()
 
 
 @app.route("/")
