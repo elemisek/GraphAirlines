@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2> Airline index </h2>
+
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+        {% for item in items %}
+            <tr>
+                <td>{{ item }}</td>
+            </tr>
+        {% endfor %}
+</table>
+
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2> Add Distance </h2>
+<form action="" method="post">
+    <p>
+        {{ form.name.label }} <br>
+        {{ form.name(size=30 )}} <br>
+        {{ form.city.label }} <br>
+        {{ form.city(size=30 )}} <br>
+        {{ form.airport_name.label }} <br>
+        {{ form.airport_name(size=30 )}} <br>
+        {{ form.airport_city.label }} <br>
+        {{ form.airport_city(size=30 )}} <br>
+        {{ form.flight_time.label }} <br>
+        {{ form.flight_time(size=30 )}} <br>
+    </p>
+    <p>{{ form.submit() }}</p>
+</form>
+
+{% endblock %}

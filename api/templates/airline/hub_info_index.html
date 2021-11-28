@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2> Hub info index </h2>
+<table>
+    <tr>
+        <th>Airport Name</th>
+        <th>City</th>
+        <th>Airline Name</th>
+    </tr>
+    {% for item in items %}
+    <tr>
+        {% for i in item %}
+        <td> {{ i }}</td>
+        {% endfor %}
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock %}
