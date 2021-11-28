@@ -143,7 +143,8 @@ def index_airport():
     items = []
     for result in results:
         items += result[0].values()
-    items = np.reshape(items, (2, -1))
+    items = np.reshape(items, (-1, 2))
+    print(items)
     return render_template('airport/index.html', items=items)
 
 
