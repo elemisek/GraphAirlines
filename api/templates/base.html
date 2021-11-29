@@ -8,7 +8,7 @@
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" rel="stylesheet">
     <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!--nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="/airline/index">Airlines</a>
         <button aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
                 data-target="#navbarNavAltMarkup" data-toggle="collapse" type="button">
@@ -25,29 +25,30 @@
 
             </div>
         </div>
-    </nav>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="/airport/index">Airports</a>
-        <button aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
-                data-target="#navbarNavAltMarkup" data-toggle="collapse" type="button">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkupAirport">
-            <div class="navbar-nav">
-
-                <a class="nav-item nav-link" href="/airport/add">Add</a>
-                <a class="nav-item nav-link" href="/airport/delete">Delete</a>
-                <a class="nav-item nav-link" href="/airport/hub">Hub</a>
-                <a class="nav-item nav-link" href="/airport/distance">Distance</a>
-                <a class="nav-item nav-link" href="/airport/distance_info">Distance info</a>
-                <a class="nav-item nav-link" href="/airport/hub_info">Hub info</a>
-            </div>
-        </div>
-    </nav>
+    </nav-->
 
 </head>
 <body>
+
+<nav class="airlines-menu">
+    <a class="home" href="/airline/index">Airlines</a>
+    <a class="section" href="/airline/add">Add</a>
+    <a class="section" href="/airline/delete">Delete</a>
+    <a class="section" href="/airline/hub">Hub</a>
+    <a class="section" href="/airline/alliance">Alliance</a>
+    <a class="section" href="/airline/alliance_info">Alliance info</a>
+    <a class="section" href="/airline/hub_info">Hub info</a>
+</nav>
+
+<nav class="airports-menu">
+    <a class="home" href="/airport/index">Airports</a>
+    <a class="section" href="/airport/add">Add</a>
+    <a class="section" href="/airport/delete">Delete</a>
+    <a class="section" href="/airport/hub">Hub</a>
+    <a class="section" href="/airport/distance">Distance</a>
+    <a class="section" href="/airport/distance_info">Distance info</a>
+    <a class="section" href="/airport/hub_info">Hub info</a>
+</nav>
 
 {% with messages = get_flashed_messages() %}
 {% if messages %}
@@ -59,14 +60,13 @@
 
 {% block content %}{% endblock %}
 
-
 </body>
 
 
 <footer>
     <div>
-        Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a
-            href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+        Icons made by <a href="https://www.freepik.com" title="Freepik" class="link">Freepik</a> from <a
+            href="https://www.flaticon.com/" title="Flaticon" class="link">www.flaticon.com</a>
     </div>
 </footer>
 

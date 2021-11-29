@@ -1,6 +1,114 @@
+:root {
+  --title-size: 48pt;
+  --title-label: 18pt;
+  --title-weight: 50pt;
+}
+
 table, th, td {
   border: 1px solid black;
 }
+
 body {
   margin-left: 20px;
+  background: #1a1f34;
+}
+
+nav {
+  text-align: center;
+  margin: 20px;
+}
+
+.home {
+  text-decoration: none;
+  color: #00aeff;
+  font-size: 28px;
+  font-weight: 600;
+  transition: color 0.5s ease-in-out;
+  text-transform: uppercase;
+  margin: 15px;
+  padding: 5px;
+}
+
+.home:hover {
+  color: aqua;
+  border-bottom: 1px solid #a3d7ec;
+}
+
+.section {
+  text-decoration: none;
+  color: #a3d7ec;
+  font-size: 24px;
+  font-weight: 400;
+  transition: color 0.5s ease-in-out;
+  text-transform: uppercase;
+  margin: 15px;
+  padding: 5px;
+}
+
+.section:hover {
+  color: aqua;
+  border-bottom: 1px solid #a3d7ec;
+}
+
+.content {
+  max-width: 500px;
+  margin: auto;
+}
+
+.title {
+  color: #a3d7ec;
+  font-size: var(--title-size);
+  font-weight: normal;
+  text-align: center;
+}
+
+.label {
+  text-align: center;
+  color: #a3d7ec;
+  font-size: var(--title-label);
+}
+
+.submit {
+  margin: auto;
+  text-align: center;
+  font-size: var(--title-label);
+}
+
+.form-button {
+  background: #00aeff;
+  border: 1px solid aqua;
+  border-radius: 5px;
+  padding: 3px 20px;
+  transition: background-color 0.5s ease-in-out;
+  font-weight: 500;
+}
+
+.form-button:hover {
+  background: #00d9ff;
+}
+
+.form-field {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding: 5px;
+  background: #dbeaea;
+  border-radius: 5px;
+}
+
+footer {
+  color: #a3d7ec;
+  margin: 20px 40px;
+  text-align: right;
+}
+
+.link {
+  color: #00aeff;
+  text-decoration: underline;
+  text-transform: lowercase;
+  padding: 0;
+}
+
+.link:hover {
+  color: aqua;
+  border: none;
 }

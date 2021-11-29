@@ -1,18 +1,19 @@
 {% extends "base.html" %}
 
+
 {% block content %}
-
-<h2> Add Hub </h2>
+<div class="content">
+<p class="title">Add Hub</p>
 <form action="" method="post">
-    <p>
+    <p class="label">
         {{ form.airline_name.label }} <br>
-        {{ form.airline_name(size=30 )}} <br>
+        {{ form.airline_name(size=30, class_="form-field")}} <br>
         {{ form.airport_name.label }} <br>
-        {{ form.airport_name(size=30 )}} <br>
+        {{ form.airport_name(size=30, class_="form-field")}} <br>
         {{ form.airport_city.label }} <br>
-        {{ form.airport_city(size=30 )}} <br>
+        {{ form.airport_city(size=30, class_="form-field")}} <br>
     </p>
-    <p>{{ form.submit() }}</p>
+    <p class="submit">{{ form.submit(class_="form-button") }}</p>
 </form>
-
+</div>
 {% endblock %}
