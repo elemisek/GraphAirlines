@@ -5,7 +5,7 @@
 }
 
 table, th, td {
-  border: 1px solid black;
+  /*border: 1px solid black;*/
 }
 
 body {
@@ -111,4 +111,23 @@ footer {
 .link:hover {
   color: aqua;
   border: none;
+}
+
+table {
+  text-align: center;
+  color: #a3d7ec;
+  border: 1px solid #00aeff;
+  margin: 0 auto;
+  width: 80%;
+}
+
+th {
+  border-bottom: 1px solid #00aeff;
+  background-color: #2e3553;
+  padding: 5px;
+}
+
+td {
+  padding: 3px;
+  margin: auto;
 }

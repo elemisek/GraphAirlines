@@ -1,14 +1,14 @@
 {% extends "base.html" %}
 
 {% block content %}
-
-<h2> Add Airline </h2>
+<div class="content">
+<p class="title">Add Airline</p>
 <form action="" method="post">
-    <p>
+    <p class="label">
         {{ form.name.label }} <br>
-        {{ form.name(size=30 )}} <br>
+        {{ form.name(size=30, class_="form-field")}} <br>
     </p>
-    <p>{{ form.submit() }}</p>
+    <p class="submit">{{ form.submit(class_="form-button") }}</p>
 </form>
-
+</div>
 {% endblock %}

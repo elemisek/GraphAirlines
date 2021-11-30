@@ -1,16 +1,16 @@
 {% extends "base.html" %}
 
 {% block content %}
-
-<h2> Distance Info </h2>
+<div class="content">
+<p class="title">Distance Info</p>
 <form action="" method="post">
-    <p>
+    <p class="label">
         {{ form.name.label }} <br>
-        {{ form.name(size=30 )}} <br>
+        {{ form.name(size=30, class_="form-field")}} <br>
         {{ form.city.label }} <br>
-        {{ form.city(size=30 )}} <br>
+        {{ form.city(size=30, class_="form-field")}} <br>
     </p>
-    <p>{{ form.submit() }}</p>
+    <p class="submit">{{ form.submit(class_="form-button") }}</p>
 </form>
-
+</div>
 {% endblock %}
