@@ -4,10 +4,6 @@
   --title-weight: 50pt;
 }
 
-table, th, td {
-  /*border: 1px solid black;*/
-}
-
 body {
   margin-left: 20px;
   background: #1a1f34;
