@@ -2,11 +2,18 @@
   --title-size: 48pt;
   --title-label: 18pt;
   --title-weight: 50pt;
+  --main-background-color: #1a1f34;
+  --common-background-color: #00aeff;
+  --main-text-color: #a3d7ec;
+  --info-color: #b62a4b;
+  --table-background: #2e3553;
+  --form-field-background: #dbeaea;
+  --button-background-color: #00d9ff;
 }
 
 body {
   margin-left: 20px;
-  background: #1a1f34;
+  background: var(--main-background-color);
 }
 
 nav {
@@ -16,7 +23,7 @@ nav {
 
 .home {
   text-decoration: none;
-  color: #00aeff;
+  color: var(--common-background-color);
   font-size: 28px;
   font-weight: 600;
   transition: color 0.5s ease-in-out;
@@ -27,12 +34,12 @@ nav {
 
 .home:hover {
   color: aqua;
-  border-bottom: 1px solid #a3d7ec;
+  border-bottom: 1px solid var(--main-text-color);
 }
 
 .section {
   text-decoration: none;
-  color: #a3d7ec;
+  color: var(--main-text-color);
   font-size: 24px;
   font-weight: 400;
   transition: color 0.5s ease-in-out;
@@ -43,7 +50,7 @@ nav {
 
 .section:hover {
   color: aqua;
-  border-bottom: 1px solid #a3d7ec;
+  border-bottom: 1px solid var(--main-text-color);
 }
 
 .content {
@@ -52,7 +59,7 @@ nav {
 }
 
 .title {
-  color: #a3d7ec;
+  color: var(--main-text-color);
   font-size: var(--title-size);
   font-weight: normal;
   text-align: center;
@@ -60,7 +67,7 @@ nav {
 
 .label {
   text-align: center;
-  color: #a3d7ec;
+  color: var(--main-text-color);
   font-size: var(--title-label);
 }
 
@@ -71,7 +78,7 @@ nav {
 }
 
 .form-button {
-  background: #00aeff;
+  background: var(--common-background-color);
   border: 1px solid aqua;
   border-radius: 5px;
   padding: 3px 20px;
@@ -80,25 +87,25 @@ nav {
 }
 
 .form-button:hover {
-  background: #00d9ff;
+  background: var(--button-background-color);
 }
 
 .form-field {
   margin-top: 5px;
   margin-bottom: 10px;
   padding: 5px;
-  background: #dbeaea;
+  background: var(--form-field-background);
   border-radius: 5px;
 }
 
 footer {
-  color: #a3d7ec;
+  color: var(--main-text-color);
   margin: 20px 40px;
   text-align: right;
 }
 
 .link {
-  color: #00aeff;
+  color: var(--common-background-color);
   text-decoration: underline;
   text-transform: lowercase;
   padding: 0;
@@ -111,19 +118,25 @@ footer {
 
 table {
   text-align: center;
-  color: #a3d7ec;
-  border: 1px solid #00aeff;
+  color: var(--main-text-color);
+  border: 1px solid var(--common-background-color);
   margin: 0 auto;
   width: 80%;
 }
 
 th {
-  border-bottom: 1px solid #00aeff;
-  background-color: #2e3553;
+  border-bottom: 1px solid var(--common-background-color);
+  background-color: var(--title-label);
   padding: 5px;
 }
 
 td {
   padding: 3px;
   margin: auto;
+}
+
+.info {
+  text-align: center;
+  color: var(--info-color);
+  font-size: var(--title-label);
 }
